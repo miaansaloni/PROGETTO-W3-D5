@@ -492,6 +492,7 @@ const addBackground = () => {
   });
 };
 addBackground();
+
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
@@ -511,6 +512,14 @@ newElementToUl("new element");
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
+const addClassToTr = () => {
+  document.querySelectorAll("tr").forEach((trEl) => {
+    trEl.classList.add("test");
+    console.log(trEl);
+  });
+};
+
+addClassToTr();
 
 // [EXTRA] JS Avanzato
 
